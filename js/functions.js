@@ -38,7 +38,7 @@ function displayResult(text, result){
 
     const area = document.createElement('span');
     area.innerHTML = result + `cm<sup>2</sup>`;
-    area.classList.add('text-center');
+    area.classList.add('text-center', 'cm-to-m');
     newDiv.appendChild(area);
 
     const convertBtn = document.createElement('button');
@@ -46,6 +46,6 @@ function displayResult(text, result){
      `
         Convert to m<sup>2</sup>
     `;
-    convertBtn.classList.add('bg-sky-400', 'px-3', 'py-1', 'rounded-lg', 'text-lg', 'font-medium', 'text-white', 'my-1', 'block', 'md:col-span-2', 'w-full');
+    convertBtn.classList.add('bg-sky-400', 'px-3', 'py-1', 'rounded-lg', 'text-lg', 'font-medium', 'text-white', 'my-1', 'block', 'md:col-span-2', 'w-full', 'convert-btn');
     newDiv.appendChild(convertBtn);
 }
