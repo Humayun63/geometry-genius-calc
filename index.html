@@ -52,9 +52,9 @@
                             <div class="flex justify-around items-center my-2">
                                 <p class="text-xl text-center inline">b=<span id="triangle-b-text">0</span>cm, h=<span
                                         id="triangle-h-text">0</span>cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                                <img src="images/edit-icon.png" alt="" class="inline edit">
                             </div>
-                            <div>
+                            <div id="triangle-input">
                                 <input type="number" id="triangle-base" placeholder="b"
                                     class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
                                 <span class="text-lg mx-1">cm</span>
@@ -87,9 +87,9 @@
                         <div class="h-14 ">
                             <div class="flex justify-around items-center my-2">
                                 <p class="text-xl text-center inline">w=<span id="rectangle-w-text">0</span> cm, l=<span id="rectangle-l-text">0</span>cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                                <img src="images/edit-icon.png" alt="" class="inline edit">
                             </div>
-                            <div>
+                            <div id="rectangle-input">
                                 <input type="number" id="rectangle-wide" placeholder="W"
                                     class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
                                 <span class="text-lg mx-1">cm</span>
@@ -120,7 +120,7 @@
                         <div class="h-14">
                             <div class="flex justify-around items-center my-2">
                                 <p class="text-xl text-center inline">b=<span id="parallelogram-b-text">0</span>cm, h=<span id="parallelogram-h-text">0</span>cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                                <img src="images/edit-icon.png" alt="" class="inline edit">
                             </div>
                             <div class="my-2" id="parallelogram-input">
                                 <input type="number" id="parallelogram-base" placeholder="b"
@@ -152,7 +152,7 @@
                         <div class="h-14">
                             <div class="flex justify-around items-center my-2">
                                 <p class="text-xl text-center inline">d<sub>1</sub>=<span id="rhombus-d1-text">0</span>cm, d<sub>2</sub>=<span id="rhombus-d2-text">0</span>cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                                <img src="images/edit-icon.png" alt="" class="inline edit">
                             </div>
                             <div class="my-2" id="rhombus-input">
                                 <input type="number" id="rhombus-first-diagonal" placeholder="d1"
@@ -184,7 +184,7 @@
                         <div class="h-14">
                             <div class="flex justify-around items-center my-2">
                                 <p class="text-xl text-center inline">p=<span id="pentagon-p-text">0</span>cm, b=<span id="pentagon-b-text">0</span>cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                                <img src="images/edit-icon.png" alt="" class="inline edit">
                             </div>
                             <div class="my-2" id="pentagon-input">
                                 <input type="number" id="pentagon-perimeter" placeholder="p"
@@ -216,7 +216,7 @@
                         <div class="h-14">
                             <div class="flex justify-around items-center my-2">
                                 <p class="text-xl text-center inline">a=<span id="ellipse-a-text">0</span>cm, b=<span id="ellipse-b-text">0</span>cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                                <img src="images/edit-icon.png" alt="" class="inline edit">
                             </div>
                             <div class="my-2" id="ellipse-input">
                                 <input type="number" id="a-axis" placeholder="a"
@@ -250,6 +250,7 @@
     <script src="js/background.js"></script>
     <script src="js/calculation.js"></script>
     <script src="js/hide-input.js"></script>
+    <script src="js/edit.js"></script>
 </body>
 
 </html>
