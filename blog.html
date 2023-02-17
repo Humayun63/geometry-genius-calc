@@ -16,7 +16,7 @@
     </header>
     <main class="container mx-auto">
         <section class="mx-2 md:mx-6 my-4">
-            <article class="p-8 my-4 bg-sky-200 rounded-lg">
+            <article class="p-4 md:p-8 my-4 bg-sky-200 rounded-lg">
                 <h2 class="text-2xl text-slate-900 font-bold my-4">What is DOM and what is the purpuse of DOM?</h2>
                 <p class="text-justify text-lg text-slate-800">
                     Document Object Model or DOM is a programming interface for HTML and XHTML documents. It represents
@@ -29,7 +29,7 @@
                     DOM is to interact with the webpage easily.
                 </p>
             </article>
-            <article class="border border-solid border-zinc-200 p-8 my-4 bg-sky-200 rounded-lg">
+            <article class="p-4 md:p-8 my-4 bg-sky-200 rounded-lg">
                 <h2 class="text-2xl text-slate-900 font-bold my-4">How will you select HTML elements using DOM?</h2>
                 <p class="text-justify text-lg text-slate-800">
                     There are some methods for selecting HTML elements like getElementById, getElementsByClassName,
@@ -38,51 +38,51 @@
                     <span class="font-medium">getElementById()</span> method takes an id as a parameter and returns the
                     element of that id. Code Look like:
                     <code
-                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.getElementById('idName')</code>
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-xs">document.getElementById('idName')</code>
                     <br><br>
                     <span class="font-medium">getElementByClassName()</span> method takes a class name as a parameter
                     and returns a HTMLCollection which is an array like object. Code looks like:
                     <code
-                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.getElementByClassName('className')</code>
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-xs">document.getElementByClassName('className')</code>
                     <br><br>
                     <span class="font-medium">getElementByTagName()</span> method takes a tag name as a parameter and
                     returns a HTMLCollection which is an array like object. Code looks like:
                     <code
-                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.getElementByTagName('tagName')</code>
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-xs">document.getElementByTagName('tagName')</code>
                     <br><br>
                     <span class="font-medium">querySelector()</span> method can take tag name, id, and class as
                     parameter and it returns the first match of the parameter. Code looks like:
                     <code
-                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.querySelector('parameter')</code>
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-xs">document.querySelector('parameter')</code>
                     <br><br>
                     <span class="font-medium">querySelectorAll()</span> method can take tag name, id, and class as
                     parameter and it returns a nodeList which is an array like object. Code looks like:
                     <code
-                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.querySelectorAll('parameter')</code>
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-xs">document.querySelectorAll('parameter')</code>
                     <br><br>
                     querySelector and querySelectorAll are most likely css selector. You can select element like you
                     select on your css code!
                     <br><br>
                     <span class="italic">Note: 'Array like object' is most likely an array. But you can't use some
-                        method like <code class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">push()</code>
-                        <code class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">pop()</code> and etc. To use all
+                        method like <code class="font-mono rounded-md bg-slate-500 text-white p-1 text-xs">push()</code>
+                        <code class="font-mono rounded-md bg-slate-500 text-white p-1 text-xs">pop()</code> and etc. To use all
                         the element you can use <code
-                            class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">for loop or for of loop</code>.
+                            class="font-mono rounded-md bg-slate-500 text-white p-1 text-xs">for loop or for of loop</code>.
                     </span>
 
                 </p>
             </article>
-            <article class="border border-solid border-zinc-200 p-8 my-4 bg-sky-200 rounded-lg">
+            <article class="p-4 md:p-8 my-4 bg-sky-200 rounded-lg">
                 <h2 class="text-2xl text-slate-900 font-bold my-4">What is event bubble?</h2>
                 <p class="text-justify text-lg text-slate-800">
                     Event bubble is an idea of event propagation of DOM. It says when an event is called then it
                     propagated to its parent and calls the parent event and then that's element parent and goes on until
                     reaches the root of the file. To stop event bubble you can use
-                    <code class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">event.stopPropagation()</code>
+                    <code class="font-mono rounded-md bg-slate-500 text-white p-1 text-xs">event.stopPropagation()</code>
                     methode.
                 </p>
             </article>
-            <article class="border border-solid border-zinc-200 p-8 my-4 bg-sky-200 rounded-lg">
+            <article class="p-4 md:p-8 my-4 bg-sky-200 rounded-lg">
                 <h2 class="text-2xl text-slate-900 font-bold my-4">What is a callback function and why will you use it?
                 </h2>
                 <p class="text-justify text-lg text-slate-800">

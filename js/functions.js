@@ -29,7 +29,7 @@ function displayResult(text, result){
     count++;
     const resultArea = setElementById('result-area');
     const newDiv = document.createElement('div');
-    newDiv.classList.add('grid', 'grid-cols-2', 'md:grid-cols-2', 'gap-1', 'mb-2');
+    newDiv.classList.add('grid', 'grid-cols-2', 'gap-1', 'mb-2');
     resultArea.appendChild(newDiv);
 
     const shapeName = document.createElement('p');
@@ -46,6 +46,6 @@ function displayResult(text, result){
      `
         Convert to m<sup>2</sup>
     `;
-    convertBtn.classList.add('bg-sky-400', 'px-3', 'py-1', 'rounded-lg', 'text-lg', 'font-medium', 'text-white', 'my-1', 'block', 'md:col-span-2', 'w-full', 'convert-btn');
+    convertBtn.classList.add('bg-sky-400', 'px-3', 'py-1', 'rounded-lg', 'text-lg', 'font-medium', 'text-white', 'my-1', 'block', 'col-span-2', 'w-full', 'convert-btn');
     newDiv.appendChild(convertBtn);
 }
