@@ -1,239 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Genius</title>
-    <!-- TAILWIND CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        input[type=number]::-webkit-inner-spin-button,
-        input[type=number]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Geometry Genius</title>
+        <!-- TAILWIND CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        </style>
+    </head>
 
-<body>
-    <!-- HEADER SECTION STARTS -->
-    <header class="container mx-auto my-8">
-        <nav class="bg-sky-200 md:flex justify-between items-center p-4 rounded-md mx-4 text-center md:text-left">
-            <!-- LOGO TEXT -->
-            <div class="mb-4">
-                <h1 class="text-4xl font-bold">Interactive</h1>
-                <h2 class="text-3xl text-slate-400">Geometry Genius</h2>
-            </div>
-            <!-- BLOG PAGE BUTTON -->
-            <button
-                class="text-2xl text-white bg-sky-400 hover:bg-sky-500 px-6 py-2 font-medium rounded-lg">Blog</button>
-        </nav>
-    </header>
-    <!-- HEADER SECTION ENDS -->
-    <!-- MAIN SECTION STARTS -->
-    <main class="container mx-auto md:flex justify-around mb-4">
-        <!-- CARD CONTAINER SECTION -->
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-4/6">
-            <!-- SINGLE CARD: TRIANGLE -->
-            <div class="border border-solid border-zinc-100 rounded-lg p-4 ">
-                <!--    CARD HEADER  -->
-                <div class="p-4 h-44">
-                    <img src="images/triangle.png" alt="Images" class="w-3/4 mx-auto">
+    <body>
+        <!-- HEADER SECTION STARTS -->
+        <header class="container mx-auto my-8">
+            <nav class="bg-sky-200 md:flex justify-between items-center p-4 rounded-md mx-4 text-center md:text-left">
+                <!-- LOGO TEXT -->
+                <div class="mb-4">
+                    <h1 class="text-4xl font-bold">Interactive</h1>
+                    <h2 class="text-3xl text-slate-400">Geometry Genius</h2>
                 </div>
-                <!-- CARD BODY -->
-                <div>
-                    <h4 class="mt-4 text-2xl font-bold text-center">Triangle</h4>
-                    <p class="text-sm text-center">Area (A) = 0.5 x b x h</p>
-                    <!-- CALCULATION AREA -->
-                    <div class="my-4 mx-auto text-center">
-                        <div class="h-14">
-                            <div class="flex justify-around items-center my-2">
-                                <p class="text-xl text-center inline">b=0cm, h=0cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                <!-- BLOG PAGE BUTTON -->
+                <button
+                    class="text-2xl text-white bg-sky-400 hover:bg-sky-500 px-6 py-2 font-medium rounded-lg">Blog</button>
+            </nav>
+        </header>
+        <!-- HEADER SECTION ENDS -->
+        <!-- MAIN SECTION STARTS -->
+        <main class="container mx-auto md:flex justify-around mb-4">
+            <!-- CARD CONTAINER SECTION -->
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:w-4/6 mx-2 mb-4">
+                <!-- SINGLE CARD: TRIANGLE -->
+                <div class="border border-solid border-zinc-100 rounded-lg p-2 ">
+                    <!--    CARD HEADER  -->
+                    <div class="p-4 mb-4 md:h-44">
+                        <img src="images/triangle.png" alt="Images" class="w-3/4 mx-auto">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div>
+                        <h4 class="mt-4 text-2xl font-bold text-center">Triangle</h4>
+                        <p class="text-sm text-center">Area (A) = 0.5 x b x h</p>
+                        <!-- CALCULATION AREA -->
+                        <div class="my-4 mx-auto text-center">
+                            <div class="h-14">
+                                <div class="flex justify-around items-center my-2">
+                                    <p class="text-xl text-center inline">b=0cm, h=0cm</p>
+                                    <img src="images/edit-icon.png" alt="" class="inline">
+                                </div>
+                                <div>
+                                    <input type="number" id="triangle-base" placeholder="b"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="number" id="triangle-height" placeholder="h"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="checkbox" checked class="scale-150">
+                                </div>
                             </div>
-                            <div>
-                                <input type="number" id="triangle-base" placeholder="b"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="number" id="triangle-height" placeholder="h"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="checkbox" checked class="scale-150">
-                            </div>
+                            <button
+                                class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                         </div>
-                        <button
-                            class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                     </div>
                 </div>
-            </div>
-            <!-- SINGLE CARD: RECTANGLE -->
-            <div class="border border-solid border-zinc-100 rounded-lg p-4 ">
-                <!--    CARD HEADER  -->
-                <div class="p-4 h-44">
-                    <img src="images/rectangle.png" alt="Images" class="w-full mx-auto">
-                </div>
-                <!-- CARD BODY -->
-                <div>
-                    <h4 class="mt-4 text-2xl font-bold text-center">Rectangle</h4>
-                    <p class="text-sm text-center">Area (A) = W x l</p>
-                    <!-- CALCULATION AREA -->
-                    <div class="my-4 mx-auto text-center">
-                        <div class="h-14 ">
-                            <div class="flex justify-around items-center my-2">
-                                <p class="text-xl text-center inline">w=0cm, l=0cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                <!-- SINGLE CARD: RECTANGLE -->
+                <div class="border border-solid border-zinc-100 rounded-lg p-2 ">
+                    <!--    CARD HEADER  -->
+                    <div class="p-4 mb-4 md:h-44">
+                        <img src="images/rectangle.png" alt="Images" class="w-full mx-auto">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div>
+                        <h4 class="mt-4 text-2xl font-bold text-center">Rectangle</h4>
+                        <p class="text-sm text-center">Area (A) = W x l</p>
+                        <!-- CALCULATION AREA -->
+                        <div class="my-4 mx-auto text-center">
+                            <div class="h-14 ">
+                                <div class="flex justify-around items-center my-2">
+                                    <p class="text-xl text-center inline">w=0cm, l=0cm</p>
+                                    <img src="images/edit-icon.png" alt="" class="inline">
+                                </div>
+                                <div>
+                                    <input type="number" id="rectangle-wide" placeholder="W"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="number" id="rectangle-length" placeholder="l"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="checkbox" checked class="scale-150">
+                                </div>
                             </div>
-                            <div>
-                                <input type="number" id="rectangle-wide" placeholder="W"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="number" id="rectangle-length" placeholder="l"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="checkbox" checked class="scale-150">
-                            </div>
+                            <button
+                                class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                         </div>
-                        <button
-                            class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                     </div>
                 </div>
-            </div>
-            <!-- SINGLE CARD: PARALLELOGRAM -->
-            <div class="border border-solid border-zinc-100 rounded-lg p-4 ">
-                <!--    CARD HEADER  -->
-                <div class="p-4 h-44">
-                    <img src="images/parallelogram.png" alt="Images" class="w-full mx-auto">
-                </div>
-                <!-- CARD BODY -->
-                <div>
-                    <h4 class="mt-4 text-2xl font-bold text-center">Parallelogram</h4>
-                    <p class="text-sm text-center">Area (A) = b x h</p>
-                    <!-- CALCULATION AREA -->
-                    <div class="my-4 mx-auto text-center">
-                        <div class="h-14">
-                            <div class="flex justify-around items-center my-2">
-                                <p class="text-xl text-center inline">b=0cm, h=0cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                <!-- SINGLE CARD: PARALLELOGRAM -->
+                <div class="border border-solid border-zinc-100 rounded-lg p-2 ">
+                    <!--    CARD HEADER  -->
+                    <div class="p-4 mb-4 md:h-44">
+                        <img src="images/parallelogram.png" alt="Images" class="w-full mx-auto">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div>
+                        <h4 class="mt-4 text-2xl font-bold text-center">Parallelogram</h4>
+                        <p class="text-sm text-center">Area (A) = b x h</p>
+                        <!-- CALCULATION AREA -->
+                        <div class="my-4 mx-auto text-center">
+                            <div class="h-14">
+                                <div class="flex justify-around items-center my-2">
+                                    <p class="text-xl text-center inline">b=0cm, h=0cm</p>
+                                    <img src="images/edit-icon.png" alt="" class="inline">
+                                </div>
+                                <div class="my-2" id="parallelogram-input">
+                                    <input type="number" id="parallelogram-base" placeholder="b"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="number" id="parallelogram-height" placeholder="h"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="checkbox" checked class="scale-150">
+                                </div>
                             </div>
-                            <div class="my-2" id="parallelogram-input">
-                                <input type="number" id="parallelogram-base" placeholder="b"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="number" id="parallelogram-height" placeholder="h"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="checkbox" checked class="scale-150">
-                            </div>
+                            <button
+                                class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                         </div>
-                        <button
-                            class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                     </div>
                 </div>
-            </div>
-            <!-- SINGLE CARD: RHOMBUS -->
-            <div class="border border-solid border-zinc-100 rounded-lg p-4 ">
-                <!--    CARD HEADER  -->
-                <div class="p-4 h-44">
-                    <img src="images/rhombus.png" alt="Images" class="w-full mx-auto">
-                </div>
-                <!-- CARD BODY -->
-                <div>
-                    <h4 class="mt-4 text-2xl font-bold text-center">Rhombus</h4>
-                    <p class="text-sm text-center">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
-                    <!-- CALCULATION AREA -->
-                    <div class="my-4 mx-auto text-center">
-                        <div class="h-14">
-                            <div class="flex justify-around items-center my-2">
-                                <p class="text-xl text-center inline">d<sub>1</sub>=0cm, d<sub>2</sub>=0cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                <!-- SINGLE CARD: RHOMBUS -->
+                <div class="border border-solid border-zinc-100 rounded-lg p-2 ">
+                    <!--    CARD HEADER  -->
+                    <div class="p-4 mb-4 md:h-44">
+                        <img src="images/rhombus.png" alt="Images" class="w-full mx-auto">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div>
+                        <h4 class="mt-4 text-2xl font-bold text-center">Rhombus</h4>
+                        <p class="text-sm text-center">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <!-- CALCULATION AREA -->
+                        <div class="my-4 mx-auto text-center">
+                            <div class="h-14">
+                                <div class="flex justify-around items-center my-2">
+                                    <p class="text-xl text-center inline">d<sub>1</sub>=0cm, d<sub>2</sub>=0cm</p>
+                                    <img src="images/edit-icon.png" alt="" class="inline">
+                                </div>
+                                <div class="my-2" id="rhombus-input">
+                                    <input type="number" id="rhombus-first-diagonal" placeholder="d1"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="number" id="rhombus-second-diagonal" placeholder="d2"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="checkbox" checked class="scale-150">
+                                </div>
                             </div>
-                            <div class="my-2" id="rhombus-input">
-                                <input type="number" id="rhombus-first-diagonal" placeholder="d1"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="number" id="rhombus-second-diagonal" placeholder="d2"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="checkbox" checked class="scale-150">
-                            </div>
+                            <button
+                                class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                         </div>
-                        <button
-                            class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                     </div>
                 </div>
-            </div>
-            <!-- SINGLE CARD: Pentagon -->
-            <div class="border border-solid border-zinc-100 rounded-lg p-4 ">
-                <!--    CARD HEADER  -->
-                <div class="p-4 h-44">
-                    <img src="images/pentagon.png" alt="Images" class="w-3/4 mx-auto">
-                </div>
-                <!-- CARD BODY -->
-                <div>
-                    <h4 class="mt-4 text-2xl font-bold text-center">Pentagon</h4>
-                    <p class="text-sm text-center">Area (A) = 0.5 x p x b</p>
-                    <!-- CALCULATION AREA -->
-                    <div class="my-4 mx-auto text-center">
-                        <div class="h-14">
-                            <div class="flex justify-around items-center my-2">
-                                <p class="text-xl text-center inline">p=0cm, b=0cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                <!-- SINGLE CARD: Pentagon -->
+                <div class="border border-solid border-zinc-100 rounded-lg p-2 ">
+                    <!--    CARD HEADER  -->
+                    <div class="p-4 mb-4 md:h-44">
+                        <img src="images/pentagon.png" alt="Images" class="w-3/4 mx-auto">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div>
+                        <h4 class="mt-4 text-2xl font-bold text-center">Pentagon</h4>
+                        <p class="text-sm text-center">Area (A) = 0.5 x p x b</p>
+                        <!-- CALCULATION AREA -->
+                        <div class="my-4 mx-auto text-center">
+                            <div class="h-14">
+                                <div class="flex justify-around items-center my-2">
+                                    <p class="text-xl text-center inline">p=0cm, b=0cm</p>
+                                    <img src="images/edit-icon.png" alt="" class="inline">
+                                </div>
+                                <div class="my-2" id="pentagon-input">
+                                    <input type="number" id="pentagon-perimeter" placeholder="p"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="number" id="pentagon-base" placeholder="b"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="checkbox" checked class="scale-150">
+                                </div>
                             </div>
-                            <div class="my-2" id="pentagon-input">
-                                <input type="number" id="pentagon-perimeter" placeholder="p"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="number" id="pentagon-base" placeholder="b"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="checkbox" checked class="scale-150">
-                            </div>
+                            <button
+                                class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                         </div>
-                        <button
-                            class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                     </div>
                 </div>
-            </div>
-            <!-- SINGLE CARD: Ellipse -->
-            <div class="border border-solid border-zinc-100 rounded-lg p-4 ">
-                <!--    CARD HEADER  -->
-                <div class="p-4 h-44">
-                    <img src="images/ellipse.png" alt="Images" class="w-full mx-auto">
-                </div>
-                <!-- CARD BODY -->
-                <div>
-                    <h4 class="mt-4 text-2xl font-bold text-center">Parallelogram</h4>
-                    <p class="text-sm text-center">Area (A) = &pi;ab</p>
-                    <!-- CALCULATION AREA -->
-                    <div class="my-4 mx-auto text-center">
-                        <div class="h-14">
-                            <div class="flex justify-around items-center my-2">
-                                <p class="text-xl text-center inline">a=0cm, b=0cm</p>
-                                <img src="images/edit-icon.png" alt="" class="inline">
+                <!-- SINGLE CARD: Ellipse -->
+                <div class="border border-solid border-zinc-100 rounded-lg p-2 ">
+                    <!--    CARD HEADER  -->
+                    <div class="p-4 mb-4 md:h-44">
+                        <img src="images/ellipse.png" alt="Images" class="w-full mx-auto">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div>
+                        <h4 class="mt-4 text-2xl font-bold text-center">Parallelogram</h4>
+                        <p class="text-sm text-center">Area (A) = &pi;ab</p>
+                        <!-- CALCULATION AREA -->
+                        <div class="my-4 mx-auto text-center">
+                            <div class="h-14">
+                                <div class="flex justify-around items-center my-2">
+                                    <p class="text-xl text-center inline">a=0cm, b=0cm</p>
+                                    <img src="images/edit-icon.png" alt="" class="inline">
+                                </div>
+                                <div class="my-2" id="ellipse-input">
+                                    <input type="number" id="a-axis" placeholder="a"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="number" id="b-axis" placeholder="b"
+                                        class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
+                                    <span class="text-lg mx-1">cm</span>
+                                    <input type="checkbox" checked class="scale-150">
+                                </div>
                             </div>
-                            <div class="my-2" id="ellipse-input">
-                                <input type="number" id="a-axis" placeholder="a"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="number" id="b-axis" placeholder="b"
-                                    class="bg-slate-200 w-1/4 rounded-md px-4 py-1 outline-0">
-                                <span class="text-lg mx-1">cm</span>
-                                <input type="checkbox" checked class="scale-150">
-                            </div>
+                            <button
+                                class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                         </div>
-                        <button
-                            class="bolck font-semibold text-2xl bg-blue-500 hover:bg-blue-600 text-white text-center mt-8 py-2 rounded-lg w-full">Calculate</button>
                     </div>
                 </div>
-            </div>
-        </section>
-        <aside class="border border-solid border-zinc-100 rounded-lg h-96 p-4 w-1/5 ">
-            <h3 class="text-xl underline text-center">Area Calculation</h3>
-        </aside>
-    </main>
-    <!-- MAIN SECTION ENDS -->
-</body>
+            </section>
+            <aside class="border border-solid border-zinc-100 rounded-lg h-96 p-4 md:w-1/5 mx-2">
+                <h3 class="text-xl underline text-center">Area Calculation</h3>
+            </aside>
+        </main>
+        <!-- MAIN SECTION ENDS -->
+    </body>
 
 </html>

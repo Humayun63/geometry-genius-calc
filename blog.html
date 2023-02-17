@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- TAILWIND CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-4xl text-violet-400 my-4">Welcome To My Blog</h1>
+    </header>
+    <main class="container mx-auto">
+        <section class="mx-2 md:mx-6 my-4">
+            <article class="p-8 my-4 bg-sky-200 rounded-lg">
+                <h2 class="text-2xl text-slate-900 font-bold my-4">What is DOM and what is the purpuse of DOM?</h2>
+                <p class="text-justify text-lg text-slate-800">
+                    Document Object Model or DOM is a programming interface for HTML and XHTML documents. It represents
+                    the webpage as an object so that webpage can be modified through a programming language. Needless to
+                    say, the object has its own property and method. So by using that property and method of DOM we can
+                    interact with the webpage easily. Anyone can create, remove or modify elements, can
+                    add/remove/modify attributes and styles, and especially can create events through DOM.
+                    <br>
+                    In short, DOM is an API (application programming interface) for the website. The purpose of using
+                    DOM is to interact with the webpage easily.
+                </p>
+            </article>
+            <article class="border border-solid border-zinc-200 p-8 my-4 bg-sky-200 rounded-lg">
+                <h2 class="text-2xl text-slate-900 font-bold my-4">How will you select HTML elements using DOM?</h2>
+                <p class="text-justify text-lg text-slate-800">
+                    There are some methods for selecting HTML elements like getElementById, getElementsByClassName,
+                    getElementsByTagName, querySelector, and querySelectorAll.
+                    <br><br>
+                    <span class="font-medium">getElementById()</span> method takes an id as a parameter and returns the
+                    element of that id. Code Look like:
+                    <code
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.getElementById('idName')</code>
+                    <br><br>
+                    <span class="font-medium">getElementByClassName()</span> method takes a class name as a parameter
+                    and returns a HTMLCollection which is an array like object. Code looks like:
+                    <code
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.getElementByClassName('className')</code>
+                    <br><br>
+                    <span class="font-medium">getElementByTagName()</span> method takes a tag name as a parameter and
+                    returns a HTMLCollection which is an array like object. Code looks like:
+                    <code
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.getElementByTagName('tagName')</code>
+                    <br><br>
+                    <span class="font-medium">querySelector()</span> method can take tag name, id, and class as
+                    parameter and it returns the first match of the parameter. Code looks like:
+                    <code
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.querySelector('parameter')</code>
+                    <br><br>
+                    <span class="font-medium">querySelectorAll()</span> method can take tag name, id, and class as
+                    parameter and it returns a nodeList which is an array like object. Code looks like:
+                    <code
+                        class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">document.querySelectorAll('parameter')</code>
+                    <br><br>
+                    querySelector and querySelectorAll are most likely css selector. You can select element like you
+                    select on your css code!
+                    <br><br>
+                    <span class="italic">Note: 'Array like object' is most likely an array. But you can't use some
+                        method like <code class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">push()</code>
+                        <code class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">pop()</code> and etc. To use all
+                        the element you can use <code
+                            class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">for loop or for of loop</code>.
+                    </span>
+
+                </p>
+            </article>
+            <article class="border border-solid border-zinc-200 p-8 my-4 bg-sky-200 rounded-lg">
+                <h2 class="text-2xl text-slate-900 font-bold my-4">What is event bubble?</h2>
+                <p class="text-justify text-lg text-slate-800">
+                    Event bubble is an idea of event propagation of DOM. It says when an event is called then it
+                    propagated to its parent and calls the parent event and then that's element parent and goes on until
+                    reaches the root of the file. To stop event bubble you can use
+                    <code class="font-mono rounded-md bg-slate-500 text-white p-1 text-sm">event.stopPropagation()</code>
+                    methode.
+                </p>
+            </article>
+            <article class="border border-solid border-zinc-200 p-8 my-4 bg-sky-200 rounded-lg">
+                <h2 class="text-2xl text-slate-900 font-bold my-4">What is a callback function and why will you use it?
+                </h2>
+                <p class="text-justify text-lg text-slate-800">
+                    When a function is passed as an argument to another function then it's called a callback function. A callback function executes inside the main function when it is called.
+                    <br>
+                    When you want a function to be called after the execution of a function, then you can use the first function as a callback function pretending as the second function is the main function.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
